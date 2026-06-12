@@ -244,7 +244,7 @@ def make_love_days_text(love_start: str) -> str:
     days = love_days(love_start)
     if days <= 0:
         return "和你的故事，从今天开始 ❤️"
-    return f"今天是我们在一起的第 {days} 天 ❤️"
+    return f"今天是我把你微信骗到手的第 {days} 天 ❤️"
 
 
 def make_birthday_text(birthday_md: str) -> str:
