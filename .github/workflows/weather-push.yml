@@ -36,4 +36,5 @@ jobs:
           CITY:          ${{ secrets.CITY }}
           CITY_ID:       ${{ secrets.CITY_ID }}
           LOVE_DATE:     ${{ secrets.LOVE_DATE }}
+          QWEATHER_HOST: ${{ secrets.QWEATHER_HOST }}
         run: python main.py
