@@ -123,8 +123,9 @@ def make_tips(temp: float, weather_text: str) -> str:
 # ----------------------------------------------------------------------
 # 和风天气 API
 # ----------------------------------------------------------------------
-QWEATHER_NOW_URL = "https://api.qweather.com/v7/weather/now"
-QWEATHER_3D_URL = "https://api.qweather.com/v7/weather/3d"
+QWEATHER_HOST = os.getenv("QWEATHER_HOST", "api.qweather.com")
+QWEATHER_NOW_URL = f"https://{QWEATHER_HOST}/v7/weather/now"
+QWEATHER_3D_URL = f"https://{QWEATHER_HOST}/v7/weather/3d"
 
 
 def fetch_weather(city_id: str, key: str) -> Dict[str, Any]:
